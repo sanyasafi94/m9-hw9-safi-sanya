@@ -63,7 +63,6 @@ nav {
 }
 
 
-
 nav > a:not(:first-of-type){
   margin-left: 24px;
 }
@@ -134,20 +133,25 @@ footer {
   color: var(--off-white);
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 1rem; /* Reduce base font size */
+
+@media (min-width: 500px) { /* Adjust breakpoint as needed */
+  body{
+    font-size: 10px;
   }
 
-  h1 {
-    font-size: 2rem; /* Reduce h1 font size */
+  nav {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center; /* Center the links */
   }
 
-  main > section, main > article {
-    margin-bottom: 48px; /* Reduce bottom margin */
+  nav > a.logo {
+    align-items: center;
+    margin-right: 0; /* Remove right margin from logo */
+    margin-bottom: 10px; /* Add space between logo and links */
   }
 
-  main p {
-    margin-bottom: 24px; /* Reduce paragraph bottom margin */
+  nav > a:not(.logo) { /*target all nav links that are not the logo*/
+    margin-left: 0; /* Remove left margin from links */
+    margin-top: 10px; /* Add vertical spacing between links */
   }
 }

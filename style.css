@@ -137,6 +137,7 @@ footer {
 @media (max-width: 500px) { 
   body{
     font-size: 14px;
+    margin: none;
   }
 
   nav {
@@ -161,11 +162,15 @@ footer {
     font-weight: 300;
   }
 
-  article {
-    font-weight: 18px;
+  section.hero {
+    margin: 0 auto;
   }
 
-  main > article img {
-    
+  article {
+    font-weight: 18px;
+    margin: none;
+  }
+  main > section, main > article {
+    margin: 0 auto;
   }
 }

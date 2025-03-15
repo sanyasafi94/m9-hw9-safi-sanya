@@ -134,10 +134,9 @@ footer {
 }
 
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) and (min-width: 400px) { 
   body{
     font-size: 14px;
-    margin: none;
   }
 
   nav {
@@ -170,7 +169,12 @@ footer {
     font-weight: 18px;
     margin: none;
   }
-  main > section, main > article {
+  article > img {
+    float: none; /* Remove float */
+    display: block; /* Make it a block element */
+    margin: 0 auto; /* Center horizontally, add some vertical margin*/
+  }
+  main  {
     margin: 0 auto;
   }
 }
